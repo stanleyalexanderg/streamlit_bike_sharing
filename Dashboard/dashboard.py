@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("day.csv")
+    df = pd.read_csv("Dashboard/day.csv")
     df["season"] = df["season"].map({1: "Spring", 2: "Summer", 3: "Fall", 4: "Winter"})
     df["weathersit"] = df["weathersit"].map({1: "Clear/Partly Cloudy", 2: "Mist/Cloudy", 3: "Light Snow/Rain", 4: "Heavy Rain/Snow"})
     return df
