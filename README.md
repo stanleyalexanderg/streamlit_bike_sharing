@@ -1,1 +1,2 @@
-# streamlit_bike_sharing
+Run steamlit app:
+streamlit run dashboard.py
