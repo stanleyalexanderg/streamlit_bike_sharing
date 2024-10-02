@@ -16,8 +16,8 @@ st.title("Analisis Bike Sharing Dataset")
 
 #SIDEBAR
 st.sidebar.header("Filter Data")
-season_select = st.sidebar.multiselect("Pilih Musim", df["season"].unique(), default=df["season"].unique())
-weathersit_select = st.sidebar.multiselect("Pilih Kondisi Cuaca", df["weathersit"].unique(), default=df["weathersit"].unique())
+season_select = st.sidebar.multiselect("Pilih Musim", df["season"].unique())
+weathersit_select = st.sidebar.multiselect("Pilih Kondisi Cuaca", df["weathersit"].unique())
 
 #FILTER DATA
 filter = df[(df["season"].isin(season_select)) & (df["weathersit"].isin(weathersit_select))]
