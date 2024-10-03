@@ -12,7 +12,7 @@ def load_data():
 
 df = load_data()
 
-st.title("Analisis Bike Sharing Dataset")
+st.title("Analisis Bike Sharing Dataset per Hari")
 
 #SIDEBAR
 st.sidebar.header("Filter Data")
@@ -42,5 +42,5 @@ st.pyplot(fig2)
 
 st.subheader("Kesimpulan Analisa Bike Sharing")
 st.write("Berdasarkan analisa dataset Bike-Sharing, dapat disimpulkan beberapa hal, yaitu:")
-st.write("1. Cuaca yang cerah ataupun berawan dapat meningkatkan hasil penyewaan sepeda, sedangkan cuaca yang buruk, seperti hujan atau bersalju dapat menurunkan hasil penyewaan sepeda")
+st.write("1. Cuaca yang cerah ataupun berawan dapat meningkatkan hasil penyewaan sepeda per harinya, sedangkan cuaca yang buruk, seperti hujan atau bersalju dapat menurunkan hasil penyewaan sepeda per harinya")
 st.write("2. Banyak orang yang menyewa sepeda pada musim gugur, namun pada musim semi tidak banyak yang ingin menyewa sepeda dibandingkan pada musim lainnya")
