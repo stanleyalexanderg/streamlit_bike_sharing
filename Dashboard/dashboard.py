@@ -12,7 +12,7 @@ def load_data():
 
 df = load_data()
 
-st.title("Analisis Bike Sharing Dataset per Hari")
+st.title("Analisis Bike Sharing Dataset dalam Satuan Hari")
 
 #SIDEBAR
 st.sidebar.header("Filter Data")
