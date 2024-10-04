@@ -33,19 +33,19 @@ st.subheader("Exploratory Data Analysis (EDA)")
 fig, axes = plt.subplots(2, 2, figsize=(16, 10))
 
 #GRAFIK PERTAMA: Pengaruh Suhu dan Cuaca Terhadap Jumlah Penyewaan
-sns.scatterplot(data=df, x="temp", y="cnt", hue="weathersit", ax=axes[0, 0])
+sns.scatterplot(data=filter, x="temp", y="cnt", hue="weathersit", ax=axes[0, 0])
 axes[0, 0].set_title("Pengaruh Suhu dan Cuaca Terhadap Jumlah Sepeda yang Disewa")
 axes[0, 0].set_xlabel("Suhu")
 axes[0, 0].set_ylabel("Jumlah Penyewaan")
 
 #GRAFIK KEDUA: Pengaruh Kecepatan Angin dan Musim Terhadap Jumlah Penyewaan
-sns.scatterplot(data=df, x="windspeed", y="cnt", hue="season", palette="Set3", s=100, ax=axes[0, 1])
+sns.scatterplot(data=filter, x="windspeed", y="cnt", hue="season", palette="Set3", s=100, ax=axes[0, 1])
 axes[0, 1].set_title('Pengaruh Kecepatan Angin dan Musim Terhadap Sepeda yang Disewa')
 axes[0, 1].set_xlabel('Kecepatan Angin')
 axes[0, 1].set_ylabel('Jumlah Penyewaan')
 
 #GRAFIK KETIGA: Total Penyewaan Berdasarkan Musim dan Kondisi Cuaca
-sns.barplot(data=df, x='season', y='cnt', hue='weathersit', palette='coolwarm', ax=axes[1, 0])
+sns.barplot(data=filter, x='season', y='cnt', hue='weathersit', palette='coolwarm', ax=axes[1, 0])
 axes[1, 0].set_title('Total Penyewaan Sepeda Berdasarkan Musim dan Kondisi Cuaca')
 axes[1, 0].set_xlabel('Musim')
 axes[1, 0].set_ylabel('Jumlah Penyewaan')
